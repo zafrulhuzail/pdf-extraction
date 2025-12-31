@@ -1,7 +1,7 @@
 from collections import defaultdict
 from typing import List, Dict, Any
-from .schemas import BankReceiptExtraction, TranscriptExtraction
-from .utils import month_key_from_iso
+from schemas import BankReceiptExtraction, TranscriptExtraction
+from utils import month_key_from_iso
 
 def compute_money_totals(receipts: List[BankReceiptExtraction]) -> Dict[str, Any]:
     insurance_total = 0.0

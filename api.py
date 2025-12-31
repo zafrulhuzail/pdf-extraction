@@ -1,11 +1,11 @@
 import os
 from typing import List, Dict, Any
 from fastapi import FastAPI, UploadFile, File, HTTPException
-from .openai_client import make_client, upload_pdf_to_openai, ask_with_file, MODEL
-from .utils import safe_json_loads
-from .schemas import BankReceiptExtraction, TranscriptExtraction
-from .analytics import compute_money_totals, group_transcript_with_ects
-from .prompts import CLASSIFY_PROMPT, RECEIPT_PROMPT, TRANSCRIPT_PROMPT
+from openai_client import make_client, upload_pdf_to_openai, ask_with_file, MODEL
+from utils import safe_json_loads
+from schemas import BankReceiptExtraction, TranscriptExtraction
+from analytics import compute_money_totals, group_transcript_with_ects
+from prompts import CLASSIFY_PROMPT, RECEIPT_PROMPT, TRANSCRIPT_PROMPT
 
 app = FastAPI(title="PDF Extraction Backend", version="1.1.0")
 client = make_client()

@@ -17,7 +17,6 @@ Quick links:
 Requirements
 1. Python 3.9
 2. Install deps: pip install -r [requirements.txt](requirements.txt)
-3. Podman (to run via Docker)
 
 Environment
 - Set OPENAI_API_KEY (see [.env](.env))
